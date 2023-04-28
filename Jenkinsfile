@@ -6,7 +6,9 @@ pipeline{
   }
   stages{
     stage('Code clone'){
+      scripts{
       git branch: 'master' url:'https://github.com/Suresh-the1/javasample.git'
+      }
     }
   }
 }
